@@ -7,6 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
         content="Deepak Enterprise – Indian manufacturer and exporter of premium brass and aluminium hinges and tower bolts for doors, windows and furniture since 1980." />
+  <!-- Open Graph / LinkedIn Preview -->
+  <meta property="og:title" content="Deepak Enterprise | Exporter of Hinges & Tower Bolts">
+  <meta property="og:description" content="Manufacturer & exporter of brass and aluminium hinges and tower bolts from India. OEM & private label supply for Europe and global markets.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.deepakenterprise.info/">
+  <meta property="og:image" content="https://www.deepakenterprise.info/assets/images/banner-deepak-hinges-tower-bolts.jpg">
+
+  <!-- Export SEO -->
+  <meta name="geo.region" content="IN-GJ">
+  <meta name="geo.placename" content="Jamnagar, Gujarat, India">
+  <meta name="distribution" content="global">
+
 
   <style>
     :root {
@@ -220,6 +232,62 @@
   height: 190px;
   object-fit: cover;
   display: block;
+}
+
+/* MOBILE ACCORDION SPECS */
+.accordion-specs {
+  display: none;
+}
+
+.accordion-specs details {
+  border: 1px solid #e2e2e6;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+  background: #fff;
+}
+
+.accordion-specs summary {
+  padding: 0.9rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordion-specs summary::marker {
+  display: none;
+}
+
+.accordion-content {
+  padding: 0.9rem 1rem;
+  border-top: 1px solid #e2e2e6;
+}
+
+.accordion-content ul {
+  padding-left: 1rem;
+  font-size: 0.85rem;
+}
+
+.accordion-content li {
+  margin-bottom: 0.4rem;
+}
+
+.accordion-img {
+  width: 100%;
+  max-width: 220px;
+  display: block;
+  margin: 0 auto 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #e2e2e6;
+}
+
+@media (max-width: 768px) {
+  .table-wrapper {
+    display: none;
+  }
+
+  .accordion-specs {
+    display: block;
+  }
 }
 
 .production-caption {
@@ -585,6 +653,22 @@
       background: #fafafa;
     }
 
+    .table-thumb {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      border-radius: 8px;
+      border: 1px solid #e2e2e6;
+      background: #fff;
+      cursor: zoom-in;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .table-thumb:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
     /* IMAGE HOVER + PREVIEW MODAL */
 
 /* hover zoom */
@@ -678,6 +762,37 @@
   padding: 0.25rem 0.6rem;
   font-size: 0.8rem;
   cursor: pointer;
+}
+/* 
+specification table */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #e2e2e6;
+  background: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+th, td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #e2e2e6;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f8fafc;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafafa;
 }
 
 
@@ -789,6 +904,13 @@
       pointer-events: auto;
     }
 
+    @media (max-width: 720px) {
+      .nav-cta {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
     /* RESPONSIVE */
 
     @media (max-width: 900px) {
@@ -841,9 +963,10 @@
 
     <div class="nav-links">
       <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#catalog">Catalog</a>
       <a class="nav-link" href="#products">Products</a>
       <a class="nav-link" href="#why">Why Us</a>
-      <a class="nav-link" href="#specs">Specifications</a>
+      <a class="nav-link" href="#specs">Hinges – Technical Specifications</a>
       <a class="nav-link" href="#contact">Contact</a>
       <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
         Dealer / Export Enquiry
@@ -992,6 +1115,58 @@
     </div>
   </section>
 
+  <!-- DOWNLOAD CATALOG -->
+  <section id="catalog" style="padding:3rem 0 0;">
+    <div class="section-head">
+      <div class="section-kicker">Catalog</div>
+      <h2 class="section-title" id="catalogDownload" href="assets/catalog/Deepak-Enterprise-Hinges-Tower-Bolts-Catalog.pdf">Download Product Catalog (PDF)</h2>
+      <p class="section-subtitle">
+        A complete overview of our hinges and tower bolts range including
+        materials, finishes, specifications and export packing options.
+      </p>
+    </div>
+
+    <div class="card" style="max-width:520px;">
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <div style="
+          width:52px;
+          height:52px;
+          border-radius:12px;
+          background:#fff6e5;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-size:1.4rem;">
+          📄
+        </div>
+
+        <div style="flex:1;">
+          <div style="font-weight:600;font-size:0.95rem;">
+            Hinges & Tower Bolts Product Catalog
+          </div>
+          <div style="font-size:0.82rem;color:var(--muted);">
+            PDF · Export version · OEM & private label
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:1rem;display:flex;gap:0.6rem;flex-wrap:wrap;">
+        <a href="assets/catalog/Deepak-Enterprise-Hinges-Tower-Bolts-Catalog.pdf"
+          download
+          class="btn btn-primary">
+          ⬇ Download PDF
+        </a>
+
+        <a href="assets/catalog/Deepak-Enterprise-Hinges-Tower-Bolts-Catalog.pdf"
+          target="_blank"
+          class="btn btn-outline">
+          👁 View Online
+        </a>
+      </div>
+    </div>
+  </section>
+
+
 
   <!-- PRODUCTS -->
   <section id="products" style="padding: 2.5rem 0 0;">
@@ -1130,6 +1305,43 @@
     </div>
   </section>
 
+  <section style="padding:3rem 0 0;">
+  <div class="section-head">
+    <div class="section-kicker">Export Credentials</div>
+    <h2 class="section-title">Built for International Supply</h2>
+    <p class="section-subtitle">
+      Our production, quality checks and packaging are aligned with
+      international hardware import standards.
+    </p>
+  </div>
+
+  <div class="grid grid-3">
+    <div class="card">
+      <div class="card-title">Export Documentation</div>
+      <div class="card-body">
+        IEC registered exporter with complete commercial, packing list
+        and HS code documentation.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Quality Control</div>
+      <div class="card-body">
+        Dimensional checks, finish inspection and batch-wise quality
+        monitoring before dispatch.
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Packaging Standards</div>
+      <div class="card-body">
+        Moisture-safe export cartons suitable for long sea transit
+        and palletized shipments.
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- WHY US -->
   <section id="why" style="padding: 3rem 0 0;">
     <div class="section-head">
@@ -1192,7 +1404,7 @@
       </p>
     </div>
 
-    <div class="table-wrapper">
+    <!-- <div class="table-wrapper">
       <table>
         <thead>
         <tr>
@@ -1234,7 +1446,305 @@
         </tr>
         </tbody>
       </table>
-    </div>
+    </div> -->
+    <div class="accordion-specs">
+
+  <!-- ITEM 1 -->
+  <details>
+    <summary>DE-BH-3535-BG — Brass Hinge 3.5" × 3.5" (Gold)</summary>
+      <div class="accordion-content">
+        <img src="assets/images/hinges/gold-hing-3535.png" class="accordion-img preview-img"
+            alt="Brass hinge 3.5 x 3.5 inch"
+            data-caption="Solid brass hinge – 3.5 × 3.5 inch">
+
+        <ul>
+          <li><strong>Material:</strong> Solid Brass</li>
+          <li><strong>Finish:</strong> Gold</li>
+          <li><strong>Height:</strong> 89 mm</li>
+          <li><strong>Width:</strong> 89 mm</li>
+          <li><strong>Gauge:</strong> 3.0 mm</li>
+          <li><strong>Holes:</strong> 6</li>
+          <li><strong>Corners:</strong> Square / Radius</li>
+          <li><strong>Finish Description:</strong> Polished & brushed brass with protective coating</li>
+          <li><strong>Screws:</strong> Brass / SS</li>
+          <li><strong>Size:</strong> 3.5" × 3.5"</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ITEM 2 -->
+    <details>
+      <summary>DE-BH-3535-AB — Brass Hinge 3.5" × 3.5" (Antique Brass)</summary>
+      <div class="accordion-content">
+        <img src="assets/images/hinges/brass-hing-antique.png" class="accordion-img preview-img"
+            alt="Brass hinge 3.5 x 3.5 inch"
+            data-caption="Solid brass hinge – 3.5 × 3.5 inch">
+
+        <ul>
+          <li><strong>Material:</strong> Solid Brass</li>
+          <li><strong>Finish:</strong> Antique Brass</li>
+          <li><strong>Height:</strong> 89 mm</li>
+          <li><strong>Width:</strong> 89 mm</li>
+          <li><strong>Gauge:</strong> 3.0 mm</li>
+          <li><strong>Holes:</strong> 6</li>
+          <li><strong>Corners:</strong> Square / Radius</li>
+          <li><strong>Finish Description:</strong> Antique hand-finished matte surface</li>
+          <li><strong>Screws:</strong> Brass / SS</li>
+          <li><strong>Size:</strong> 3.5" × 3.5"</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ITEM 3 -->
+    <details>
+      <summary>DE-BH-3535-SN — Brass Hinge 3.5" × 3.5" (Satin Nickel)</summary>
+      <div class="accordion-content">
+        <img src="assets/images/hinges/satin-nickle-3535.png" class="accordion-img preview-img"
+            alt="Brass hinge 3.5 x 3.5 inch"
+            data-caption="Solid brass hinge – 3.5 × 3.5 inch">
+
+        <ul>
+          <li><strong>Material:</strong> Solid Brass</li>
+          <li><strong>Finish:</strong> Satin Nickel</li>
+          <li><strong>Height:</strong> 89 mm</li>
+          <li><strong>Width:</strong> 89 mm</li>
+          <li><strong>Gauge:</strong> 3.0 mm</li>
+          <li><strong>Holes:</strong> 6</li>
+          <li><strong>Corners:</strong> Square / Radius</li>
+          <li><strong>Finish Description:</strong> Satin matte nickel finish with corrosion resistance</li>
+          <li><strong>Screws:</strong> Brass / SS</li>
+          <li><strong>Size:</strong> 3.5" × 3.5"</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ITEM 4 -->
+    <details>
+      <summary>DE-BH-4040-BG — Brass Hinge 4" × 4" (Gold)</summary>
+      <div class="accordion-content">
+        <img src="assets/images/hinges/gold-hing-3535.png" class="accordion-img preview-img"
+            alt="Brass hinge 4 x 4 inch"
+            data-caption="Solid brass hinge – 4 × 4 inch">
+
+        <ul>
+          <li><strong>Material:</strong> Solid Brass</li>
+          <li><strong>Finish:</strong> Gold</li>
+          <li><strong>Height:</strong> 102 mm</li>
+          <li><strong>Width:</strong> 102 mm</li>
+          <li><strong>Gauge:</strong> 3.0 / 3.5 mm</li>
+          <li><strong>Holes:</strong> 8</li>
+          <li><strong>Corners:</strong> Square / Radius</li>
+          <li><strong>Finish Description:</strong> Premium polished brass with uniform finish</li>
+          <li><strong>Screws:</strong> Brass / SS</li>
+          <li><strong>Size:</strong> 4" × 4"</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ITEM 5 -->
+    <details>
+      <summary>DE-BH-4040-AB — Brass Hinge 4" × 4" (Antique Brass)</summary>
+      <div class="accordion-content">
+        <img src="assets/images/hinges/brass-hing--4x4-antique.png" class="accordion-img preview-img"
+            alt="Brass hinge 4 x 4 inch"
+            data-caption="Solid brass hinge – 4 × 4 inch">
+
+        <ul>
+          <li><strong>Material:</strong> Solid Brass</li>
+          <li><strong>Finish:</strong> Antique Brass</li>
+          <li><strong>Height:</strong> 102 mm</li>
+          <li><strong>Width:</strong> 102 mm</li>
+          <li><strong>Gauge:</strong> 3.0 / 3.5 mm</li>
+          <li><strong>Holes:</strong> 8</li>
+          <li><strong>Corners:</strong> Square / Radius</li>
+          <li><strong>Finish Description:</strong> Classic antique brass finish for premium interiors</li>
+          <li><strong>Screws:</strong> Brass / SS</li>
+          <li><strong>Size:</strong> 4" × 4"</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- ITEM 6 -->
+    <details>
+      <summary>DE-BH-4040-BL — Brass Hinge 4" × 4" (Matt Black)</summary>
+      <div class="accordion-content">
+        <img src="assets/images/hinges/brass-hing-matt-black-4x4-.png" class="accordion-img preview-img"
+            alt="Brass hinge 4 x 4 inch"
+            data-caption="Solid brass hinge – 4 × 4 inch">
+
+        <ul>
+          <li><strong>Material:</strong> Solid Brass</li>
+          <li><strong>Finish:</strong> Matt Black</li>
+          <li><strong>Height:</strong> 102 mm</li>
+          <li><strong>Width:</strong> 102 mm</li>
+          <li><strong>Gauge:</strong> 3.0 / 3.5 mm</li>
+          <li><strong>Holes:</strong> 8</li>
+          <li><strong>Corners:</strong> Square / Radius</li>
+          <li><strong>Finish Description:</strong> Powder-coated matt black export-grade finish</li>
+          <li><strong>Screws:</strong> Brass / SS</li>
+          <li><strong>Size:</strong> 4" × 4"</li>
+        </ul>
+      </div>
+    </details>
+
+  </div>
+    <div class="table-wrapper">
+      <!-- MOBILE ACCORDION – HINGES SPECS -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Item #</th>
+          <th>Material</th>
+          <th>Finish</th>
+          <th>Height (mm)</th>
+          <th>Width (mm)</th>
+          <th>Gauge (mm)</th>
+          <th>Holes</th>
+          <th>Corners</th>
+          <th>Finish Description</th>
+          <th>Screws</th>
+          <th>Width × Height</th>
+          <th>Image Shown</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>DE-BH-3535-BG</td>
+          <td>Solid Brass</td>
+          <td>Gold</td>
+          <td>89</td>
+          <td>89</td>
+          <td>3.0</td>
+          <td>6</td>
+          <td>Square / Radius</td>
+          <td>Polished & brushed brass with protective coating</td>
+          <td>Brass / SS</td>
+          <td>3.5" × 3.5"</td>
+          <td>
+            <img 
+              src="assets/images/hinges/gold-hing-3535.png"
+              alt="Brass hinge 3.5 x 3.5 inch"
+              class="table-thumb preview-img"
+              data-caption="Solid brass hinge – 3.5 × 3.5 inch"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>DE-BH-3535-AB</td>
+          <td>Solid Brass</td>
+          <td>Antique Brass</td>
+          <td>89</td>
+          <td>89</td>
+          <td>3.0</td>
+          <td>6</td>
+          <td>Square / Radius</td>
+          <td>Antique hand-finished matte surface</td>
+          <td>Brass / SS</td>
+          <td>3.5" × 3.5"</td>
+          <td><img 
+              src="assets/images/hinges/brass-hing-antique.png"
+              alt="Brass hinge 3.5 x 3.5 inch"
+              class="table-thumb preview-img"
+              data-caption="Solid brass hinge – 3.5 × 3.5 inch"
+            /></td>
+        </tr>
+
+        <tr>
+          <td>DE-BH-3535-SN</td>
+          <td>Solid Brass</td>
+          <td>Satin Nickel</td>
+          <td>89</td>
+          <td>89</td>
+          <td>3.0</td>
+          <td>6</td>
+          <td>Square / Radius</td>
+          <td>Satin matte nickel finish with corrosion resistance</td>
+          <td>Brass / SS</td>
+          <td>3.5" × 3.5"</td>
+          <td>
+            <img 
+              src="assets/images/hinges/satin-nickle-3535.png"
+              alt="Brass hinge 3.5 x 3.5 inch"
+              class="table-thumb preview-img"
+              data-caption="Solid brass hinge – 3.5 × 3.5 inch"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>DE-BH-4040-BG</td>
+          <td>Solid Brass</td>
+          <td>Gold</td>
+          <td>102</td>
+          <td>102</td>
+          <td>3.0 / 3.5</td>
+          <td>8</td>
+          <td>Square / Radius</td>
+          <td>Premium polished brass with uniform finish</td>
+          <td>Brass / SS</td>
+          <td>4" × 4"</td>
+          <td>
+            <img 
+              src="assets/images/hinges/gold-hing-3535.png"
+              alt="Brass hinge 4 x 4 inch"
+              class="table-thumb preview-img"
+              data-caption="Solid brass hinge – 4 × 4 inch"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>DE-BH-4040-AB</td>
+          <td>Solid Brass</td>
+          <td>Antique Brass</td>
+          <td>102</td>
+          <td>102</td>
+          <td>3.0 / 3.5</td>
+          <td>8</td>
+          <td>Square / Radius</td>
+          <td>Classic antique brass finish for premium interiors</td>
+          <td>Brass / SS</td>
+          <td>4" × 4"</td>
+          <td>
+            <img 
+              src="assets/images/hinges/brass-hing--4x4-antique.png"
+              alt="Brass hinge 4 x 4 inch"
+              class="table-thumb preview-img"
+              data-caption="Solid brass hinge – 4 × 4 inch"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>DE-BH-4040-BL</td>
+          <td>Solid Brass</td>
+          <td>Matt Black</td>
+          <td>102</td>
+          <td>102</td>
+          <td>3.0 / 3.5</td>
+          <td>8</td>
+          <td>Square / Radius</td>
+          <td>Powder-coated matt black export-grade finish</td>
+          <td>Brass / SS</td>
+          <td>4" × 4"</td>
+          <td>
+            <img 
+              src="assets/images/hinges/brass-hing-matt-black-4x4-.png"
+              alt="Brass hinge 4 x 4 inch"
+              class="table-thumb preview-img"
+              data-caption="Solid brass hinge – 4 × 4 inch"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:0.8rem;color:#666;margin-top:0.6rem;">
+      *Specifications are indicative. Custom sizes, finishes and hole patterns
+      available for OEM and export orders.*
+    </p>
   </section>
 
   <!-- CONTACT -->
@@ -1275,6 +1785,17 @@
 
       <div class="form-row">
         <div>
+          <label for="quantity">Approx. Monthly Quantity</label>
+          <input id="quantity" name="quantity" placeholder="e.g. 5,000 pcs" />
+        </div>
+        <div>
+          <label for="port">Destination Port</label>
+          <input id="port" name="port" placeholder="Hamburg, Rotterdam, Jebel Ali" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div>
           <label for="country">Country</label>
           <input id="country" name="country" placeholder="India, Spain, Canada..." />
         </div>
@@ -1309,8 +1830,11 @@
 
       <div class="contact-card contact-info">
         <p><strong>Deepak Enterprise</strong><br />
-          (Put your full factory address here)<br />
+          34 Digvijay Plot,GIDC Industrial Area, Jamnagar, Gujarat, 361005<br />
           Jamnagar, Gujarat, India
+        </p>
+        <p>
+          <strong>GST:</strong> 24ASDPK3690H1ZR
         </p>
         <p>
           <strong>Phone:</strong> +91-98765 43210<br />
@@ -1337,7 +1861,7 @@
 
 <!-- WhatsApp floating button (change number & message to your own) -->
 <a class="wa-fab"
-   href="https://wa.me/919876543210?text=Hello%20Deepak%20Enterprise%2C%20I%20am%20interested%20in%20brass%20and%20aluminium%20hinges%20%2F%20tower%20bolts.%20Please%20share%20details."
+   href="https://wa.me/9428575328?text=Hello%20Deepak%20Enterprise%2C%20I%20am%20interested%20in%20brass%20and%20aluminium%20hinges%20%2F%20tower%20bolts.%20Please%20share%20details."
    target="_blank" rel="noopener">
   <svg viewBox="0 0 24 24">
     <path d="M20.52 3.48A11.8 11.8 0 0 0 12.04 0C5.73.02.59 5.16.61 11.47c0 2.02.53 3.99 1.55 5.74L0 24l6.96-2.12a11.8 11.8 0 0 0 5.07 1.18h.01c6.31 0 11.45-5.14 11.47-11.45a11.4 11.4 0 0 0-3.99-8.13zM12.04 21.3h-.01a9.57 9.57 0 0 1-4.88-1.34l-.35-.21-4.13 1.26 1.27-4.03-.23-.41A9.6 9.6 0 0 1 2.46 11.5C2.45 6.4 6.55 2.3 11.66 2.29c2.56 0 4.97 1 6.78 2.81a9.49 9.49 0 0 1 2.84 6.78c-.02 5.11-4.14 9.42-9.24 9.42zm5.26-7.16c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.74.94-.9 1.13-.17.19-.33.21-.62.07-.29-.14-1.23-.45-2.34-1.44-.86-.76-1.44-1.7-1.61-1.99-.17-.29-.02-.44.13-.58.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.13-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.02 2.81 1.17 3.01.14.19 2 3.05 4.85 4.28.68.29 1.21.46 1.62.58.68.22 1.3.19 1.79.12.55-.08 1.7-.7 1.94-1.38.24-.67.24-1.25.17-1.38-.08-.12-.26-.2-.55-.34z"/>
@@ -1472,7 +1996,15 @@ if (enquiryForm) {
 }
 
 </script>
-
+<script>
+  const catalogBtn = document.getElementById('catalogDownload');
+  if (catalogBtn) {
+    catalogBtn.addEventListener('click', () => {
+      console.log('Catalog downloaded');
+      // later you can connect this to Google Analytics
+    });
+  }
+</script>
 
 </body>
 </html>
