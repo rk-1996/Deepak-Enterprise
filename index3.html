@@ -19,173 +19,40 @@
   <meta name="geo.placename" content="Jamnagar, Gujarat, India">
   <meta name="distribution" content="global">
   <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="assets/css/manu.css">
 </head>
 <body>
 
-<header class="header">
-
-    <div class="container">
-        <div class="nav-left">
-            <div class="logo-mark logo-img">
-                <img src="assets/images/logo.png" alt="Deepak Enterprise Logo">
-            </div>
-            <div>
-                <div class="logo-text-main">Deepak Enterprise</div>
-                <div class="logo-text-sub">Brass Electrical Parts &amp; Aluminium Hinges · Tower Bolts</div>
-            </div>
-        </div>
-
-        <nav class="navbar">
-
-            <ul>
-
-                <li><a class="nav-link active" href="#home">Home</a></li>
-
-                <li class="mega-parent">
-
-                    <a href="#">Products ▾</a>
-
-                    <div class="mega-menu">
-
-                        <div class="mega-column">
-
-                            <h3>Hardware</h3>
-
-                            <a href="#">Brass Hinges</a>
-
-                            <a href="#">Aluminium Hinges</a>
-
-                            <a href="#">Tower Bolts</a>
-
-                            <a href="#">Door Hardware</a>
-
-                        </div>
-
-                        <div class="mega-column">
-
-                            <h3>Electrical Parts</h3>
-
-                            <a href="#">Brass Plug Pins</a>
-
-                            <a href="#">Brass Terminals</a>
-
-                            <a href="#">Neutral Links</a>
-
-                            <a href="#">Connector Pins</a>
-
-                            <a href="#">16 Amp Join</a>
-
-                            <a href="#">Custom Brass Parts</a>
-
-                        </div>
-
-                        <div class="mega-column">
-
-                            <h3>Services</h3>
-
-                            <a href="#">OEM Manufacturing</a>
-
-                            <a href="#">Private Label</a>
-
-                            <a href="#">Export Supply</a>
-
-                            <a href="#">Custom Development</a>
-
-                        </div>
-
-                        <div class="mega-column">
-
-                            <h3>Downloads</h3>
-
-                            <a href="#">Catalogue</a>
-
-                            <a href="#">Company Profile</a>
-
-                            <a href="#">Certificates</a>
-
-                        </div>
-
-                    </div>
-
-                </li>
-
-                <li><a href="#manufacturing">Manufacturing</a></li>
-
-                <li><a class="nav-link" href="#why" href="#quality">Quality</a></li>
-
-                <li><a  href="#about">About</a></li>
-
-                <li><a class="nav-link" href="#contact" href="#contact">Contact</a></li>
-
-                <li>
-
-                    <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-                Dealer / Export Enquiry
-              </button>
-                </li>
-            </ul>
-
-
-        </nav>
-
-        <div class="header-buttons">
-
-    
-
-    <button class="hamburger" id="hamburger">
-
-        <span></span>
-        <span></span>
-        <span></span>
-
+<header>
+  <div class="nav">
+    <div class="nav-left">
+      <div class="logo-mark logo-img">
+        <img src="assets/images/logo.png" alt="Deepak Enterprise Logo">
+      </div>
+      <div>
+        <div class="logo-text-main">Deepak Enterprise</div>
+        <div class="logo-text-sub">Brass &amp; Aluminium Hinges · Tower Bolts</div>
+      </div>
+    </div>
+    <!-- Mobile menu button -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+      ☰
     </button>
 
-</div>
 
+    <div class="nav-links">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#catalog">Catalog</a>
+      <a class="nav-link" href="#products">Products</a>
+      <a class="nav-link" href="#why">Why Us</a>
+      <a class="nav-link" href="#specs">Hinges – Technical Specifications</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Dealer / Export Enquiry
+      </button>
     </div>
-
+  </div>
 </header>
 <!-- Mobile Side Menu -->
- <div class="overlay" id="overlay"></div>
-
-<div class="side-menu" id="sideMenu">
-
-    <button class="close-btn" id="closeMenu">✕</button>
-
-    <a href="#home">🏠 Home</a>
-
-    <details>
-
-        <summary>📦 Products</summary>
-
-        <a href="#">Brass Hinges</a>
-        <a href="#">Aluminium Hinges</a>
-        <a href="#">Tower Bolts</a>
-        <a href="#">Brass Plug Pins</a>
-        <a href="#">Brass Terminals</a>
-        <a href="#">Neutral Links</a>
-        <a href="#">Connector Pins</a>
-        <a href="#">16 Amp Join</a>
-        <a href="#">Custom Brass Parts</a>
-
-    </details>
-
-    <a href="#manufacturing">🏭 Manufacturing</a>
-
-    <a href="#quality">⭐ Quality</a>
-
-    <a href="#catalog">📄 Catalogue</a>
-
-    <a href="#about">👤 About</a>
-
-    <a href="#contact">📞 Contact</a>
-
-    <a href="#contact" class="mobile-btn">
-        Request Quote
-    </a>
-
-</div>
 <div class="mobile-menu-overlay" id="menuOverlay"></div>
 
 <nav class="mobile-menu" id="mobileMenu">
@@ -199,76 +66,15 @@
   <a href="#contact" class="menu-cta">Dealer / Export Enquiry</a>
 </nav>
 <main>
-
-    <section class="product-slider">
-    <div class="slider">
-
-        <div class="slide active">
-            <img src="assets/images/Brass-electrical-part-deepak-enterprise-banner.png" alt="Brass Electrical Parts">
-            <div class="slide-content">
-                <!-- <h2>Export Quality Brass Electrical Parts</h2> -->
-                <div class="hero-banner-kicker">Deepak Enterprise · Since 1980</div>
-                <h2 class="hero-banner-title">
-                    Export Quality <span>Brass Electrical Components</span>
-                </h2>
-                <p>Precision manufactured brass electrical components for global industries.</p>
-                <!-- <a href="brass-electrical.html" class="btn">View Products</a> -->
-                <div class="hero-banner-tags">
-                    <span class="hero-banner-tag">Brass</span>
-                    <span class="hero-banner-tag">Antique · SS</span>
-                    <span class="hero-banner-tag">OEM &amp; private label</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="slide">
-            <img src="assets/images/aluminium-hinges-collection.jpg1.png" alt="Brass Hinges">
-            <div class="slide-content">
-                <h2 class="hero-banner-title">
-                    Export Quality <span>Brass & Aluminium Hinges</span>
-                </h2>
-                <p>Premium quality door, cabinet and furniture hinges with multiple finishes.</p>
-                <!-- <a href="brass-electrical.html" class="btn">View Products</a> -->
-                <div class="hero-banner-tags">
-                    <div class="hero-banner-tags">
-                        <span class="hero-banner-tag">Brass &amp; aluminium</span>
-                        <span class="hero-banner-tag">PVD · Antique · SS</span>
-                        <span class="hero-banner-tag">OEM &amp; private label</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slide">
-            <img src="assets/images/tower-bolts-collection.png" alt="Tower Bolts">
-            <div class="slide-content">
-                <h2 class="hero-banner-title">
-                    Export Quality <span>Brass & Aluminium Tower Bolts</span>
-                </h2>
-                <p>Strong, durable and corrosion-resistant tower bolts for residential and commercial applications.</p>
-                <!-- <a href="brass-electrical.html" class="btn">View Products</a> -->
-                <div class="hero-banner-tags">
-                    <div class="hero-banner-tags">
-                        <span class="hero-banner-tag">Brass &amp; aluminium</span>
-                        <span class="hero-banner-tag">PVD · Antique · SS</span>
-                        <span class="hero-banner-tag">OEM &amp; private label</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <button class="prev">&#10094;</button>
-        <button class="next">&#10095;</button>
-
-        <div class="dots"></div>
-
-    </div>
-</section>
     <!-- TOP BANNER IMAGE -->
-  <!-- <section class="hero-banner">
+  <section class="hero-banner">
+    <!-- Replace src with your actual banner image path -->
     <img src="assets/images/banner-deepak-hinges-tower-bolts.jpg"
          alt="Brass and aluminium hinges and tower bolts banner" />
-    
+    <!-- <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/video/Deepak Enterprise Banner Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> -->
 
     <div class="hero-banner-overlay">
       <div class="hero-banner-kicker">Deepak Enterprise · Since 1980</div>
@@ -285,43 +91,9 @@
         <span class="hero-banner-tag">OEM &amp; private label</span>
       </div>
     </div>
-  </section> -->
-
-  <!-- HERO -->
-    <section id="home" class="hero">
-        <div class="hero-media">
-      <div class="hero-media-inner">
-        <img src="assets/images/3-pin-uk-type-plugs-deepak-enterprise.jpg"
-             alt="Brass hinges and tower bolts by Deepak Enterprise" />
-        <div class="hero-label">
-          ● Production line
-          <span style="font-size:0.7rem;opacity:0.9;">Brass &amp; Electrical Part in process</span>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="hero-kicker">Manufacturer &amp; Exporter · Since 1980</div>
-      <h1 class="hero-title">
-        Premium <span>Brass &amp; Electrical</span> Part
-      </h1>
-      <p class="hero-text">
-        Our UK Plug Brass Pins are precision-engineered from high-grade brass to ensure excellent electrical conductivity, superior mechanical strength, and long-lasting corrosion resistance. Manufactured with tight dimensional tolerances, these pins are widely used in BS 1363 Type-G plug tops for residential, commercial, and industrial applications.
-
-Designed for reliable electrical performance and extended service life, our brass plug pins are available in various sizes, shapes, and custom specifications to meet OEM and international market requirements.
-      </p>
-      <div class="hero-badges">
-        <span class="badge badge-gold">45+ years manufacturing</span>
-        <span class="badge">OEM &amp; private label</span>
-      </div>
-      <div class="hero-actions">
-        <a href="#products" class="btn btn-primary">View &amp; Range</a>
-        <a href="#specs" class="btn btn-outline">Download spec overview (PDF)</a>
-      </div>
-    </div>
-
-    
   </section>
 
+  <!-- HERO -->
   <section id="home" class="hero">
     <div>
       <div class="hero-kicker">Manufacturer &amp; Exporter · Since 1980</div>
@@ -1400,27 +1172,6 @@ if (enquiryForm) {
 
 </script>
 <script>
-window.addEventListener("scroll", function () {
-
-    const header = document.querySelector(".header");
-
-    if (!header) return;
-
-    if (window.scrollY > 50) {
-
-        header.style.background = "rgba(255,255,255,.96)";
-        header.style.backdropFilter = "blur(12px)";
-
-    } else {
-
-        header.style.background = "#fff";
-        header.style.backdropFilter = "none";
-
-    }
-
-});
-</script>
-<script>
   const catalogBtn = document.getElementById('catalogDownload');
   if (catalogBtn) {
     catalogBtn.addEventListener('click', () => {
@@ -1428,97 +1179,6 @@ window.addEventListener("scroll", function () {
       // later you can connect this to Google Analytics
     });
   }
-</script>
-<script>
-
-const hamburger=document.getElementById("hamburger");
-
-const sideMenu=document.getElementById("sideMenu");
-
-const overlay=document.getElementById("overlay");
-
-const closeMenu=document.getElementById("closeMenu");
-
-function openMenu(){
-
-sideMenu.classList.add("open");
-
-overlay.classList.add("show");
-
-hamburger.classList.add("active");
-
-document.body.style.overflow="hidden";
-
-}
-
-function hideMenu(){
-
-sideMenu.classList.remove("open");
-
-overlay.classList.remove("show");
-
-hamburger.classList.remove("active");
-
-document.body.style.overflow="";
-
-}
-
-hamburger.addEventListener("click",openMenu);
-
-closeMenu.addEventListener("click",hideMenu);
-
-overlay.addEventListener("click",hideMenu);
-
-document.querySelectorAll(".side-menu a").forEach(link=>{
-
-link.addEventListener("click",hideMenu);
-
-});
-
-</script>
-<script>
-    const slides = document.querySelectorAll(".slide");
-const dotsContainer = document.querySelector(".dots");
-const next = document.querySelector(".next");
-const prev = document.querySelector(".prev");
-
-let index = 0;
-
-slides.forEach((slide,i)=>{
-    const dot=document.createElement("span");
-    dot.classList.add("dot");
-    if(i===0) dot.classList.add("active");
-
-    dot.addEventListener("click",()=>{
-        showSlide(i);
-    });
-
-    dotsContainer.appendChild(dot);
-});
-
-const dots=document.querySelectorAll(".dot");
-
-function showSlide(i){
-
-slides[index].classList.remove("active");
-dots[index].classList.remove("active");
-
-index=i;
-
-if(index>=slides.length) index=0;
-if(index<0) index=slides.length-1;
-
-slides[index].classList.add("active");
-dots[index].classList.add("active");
-
-}
-
-next.onclick=()=>showSlide(index+1);
-prev.onclick=()=>showSlide(index-1);
-
-setInterval(()=>{
-showSlide(index+1);
-},6000);
 </script>
 <script>
   const scrollTopBtn = document.getElementById('scrollTopBtn');
