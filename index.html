@@ -22,8 +22,8 @@
   <link rel="stylesheet" href="assets/css/manu.css">
 </head>
 <body>
-
-<header class="header">
+<div id="site-header"></div>
+<!-- <header class="header">
 
     <div class="container">
         <div class="nav-left">
@@ -63,22 +63,36 @@
                         </div>
 
                         <div class="mega-column">
+                          <h3>Electrical Parts</h3>
 
-                            <h3>Electrical Parts</h3>
+                          <a href="products.html">
+                            View All Electrical Products
+                          </a>
 
-                            <a href="#">Brass Plug Pins</a>
+                          <a href="products.html?category=electrical">
+                            Brass Plug Pins
+                          </a>
 
-                            <a href="#">Brass Terminals</a>
+                          <a href="products.html?category=electrical">
+                            Brass Neutral Links
+                          </a>
 
-                            <a href="#">Neutral Links</a>
+                          <a href="products.html?category=electrical">
+                            Brass Earth Blocks
+                          </a>
 
-                            <a href="#">Connector Pins</a>
+                          <a href="products.html?category=electrical">
+                            Brass Connector Pins
+                          </a>
 
-                            <a href="#">16 Amp Join</a>
+                          <a href="products.html?category=electrical">
+                            MCB Terminal Cages
+                          </a>
 
-                            <a href="#">Custom Brass Parts</a>
-
-                        </div>
+                          <a href="products.html?category=custom">
+                            Custom Brass Parts
+                          </a>
+                      </div>
 
                         <div class="mega-column">
 
@@ -145,11 +159,11 @@
 
     </div>
 
-</header>
+</header> -->
 <!-- Mobile Side Menu -->
- <div class="overlay" id="overlay"></div>
+ <!-- <div class="overlay" id="overlay"></div> -->
 
-<div class="side-menu" id="sideMenu">
+<!-- <div class="side-menu" id="sideMenu">
 
     <button class="close-btn" id="closeMenu">✕</button>
 
@@ -186,9 +200,9 @@
     </a>
 
 </div>
-<div class="mobile-menu-overlay" id="menuOverlay"></div>
+<div class="mobile-menu-overlay" id="menuOverlay"></div> -->
 
-<nav class="mobile-menu" id="mobileMenu">
+<!-- <nav class="mobile-menu" id="mobileMenu">
   <button class="mobile-menu-close" id="menuClose">✕</button>
 
   <a href="#home">Home</a>
@@ -197,7 +211,7 @@
   <a href="#why">Why Us</a>
   <a href="#specs">Technical Specs</a>
   <a href="#contact" class="menu-cta">Dealer / Export Enquiry</a>
-</nav>
+</nav> -->
 <main>
 
     <section class="product-slider">
@@ -1175,13 +1189,11 @@ Designed for reliable electrical performance and extended service life, our bras
     </div>
   </section>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
   <div class="footer-inner">
 
-    <!-- LEFT: SOCIAL + MADE IN INDIA -->
     <div class="footer-left">
 
-      <!-- Social Icons -->
       <div class="footer-social">
         <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
           <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.4c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V11H16l-.4 3h-2.5v7A10 10 0 0 0 22 12z"/></svg>
@@ -1196,14 +1208,12 @@ Designed for reliable electrical performance and extended service life, our bras
         </a>
       </div>
 
-      <!-- Export Badge -->
       <div class="export-badge">
         🇮🇳 Made in India · Export Quality Hardware
       </div>
 
     </div>
 
-    <!-- RIGHT: CONTACT + MAP -->
     <div class="footer-right">
 
       <a href="https://maps.google.com/?q=34+Digvijay+Plot+GIDC+Industrial+Area+Jamnagar+Gujarat+361005"
@@ -1223,10 +1233,8 @@ Designed for reliable electrical performance and extended service life, our bras
 
   </div>
 
-  <!-- CERTIFICATIONS + EXPORT MARKETS -->
 <div class="footer-credentials">
 
-  <!-- Certifications -->
   <div class="footer-certifications">
     <span class="cred-title">Certifications</span>
     <div class="cert-icons">
@@ -1236,7 +1244,6 @@ Designed for reliable electrical performance and extended service life, our bras
     </div>
   </div>
 
-  <!-- Export Markets -->
   <div class="footer-markets">
     <span class="cred-title">Export Markets</span>
     <div class="flag-icons">
@@ -1253,8 +1260,9 @@ Designed for reliable electrical performance and extended service life, our bras
   <div class="footer-bottom">
     © <span id="year"></span> Deepak Enterprise. All rights reserved.
   </div>
-</footer>
-
+</footer> -->
+<!-- Reusable Footer -->
+  <div id="site-footer"></div>
 </main>
 
 <!-- WhatsApp floating button (change number & message to your own) -->
@@ -1279,7 +1287,7 @@ Designed for reliable electrical performance and extended service life, our bras
 <button id="scrollTopBtn" aria-label="Scroll to top">
   ↑
 </button>
-
+<script src="assets/js/components.js"></script>
 <script>
   // Year
   document.getElementById('year').textContent = new Date().getFullYear();
